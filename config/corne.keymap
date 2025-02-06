@@ -31,18 +31,7 @@
         };
     };
 
-    combos {
-        compatible = "zmk,combos";
-
-        lastlayer {
-            bindings = <&mo 3>;
-            key-positions = <0 1 2 4 5 6 7 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 28 29 30 31 32 33 34 35 36 37 38 39 40 41 27>;
-            require-prior-idle-ms = <1>;
-            timeout-ms = <200>;
-            slow-release;
-            layers = <0 1 2 3>;
-        };
-    };
+    combos { compatible = "zmk,combos"; };
 
     keymap {
         compatible = "zmk,keymap";
@@ -99,6 +88,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        layer3 {
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
