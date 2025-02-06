@@ -21,6 +21,15 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
           }; 
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;  // Tiempo que detecta si es hold o tap
+            quick-tap-ms = <0>;
+            flavor = "balanced";      // Equilibrio entre tap y hold
+            bindings = <&kp>, <&kp>;
+          };
         };
 
         keymap {
