@@ -37,7 +37,12 @@
         openCMD: openCMD {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(R) &kp C &kp M &kp D>;
+            bindings =
+                <&kp LG(R)>,
+                <&macro_wait_time 100>,
+                <&kp C &kp M &kp D>,
+                <&macro_wait_time 50>;
+
             label = "OPENCMD";
         };
     };
@@ -92,10 +97,10 @@
 
         layer_3 {
             bindings = <
-&trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans             &trans           &trans      &trans      &trans
+&trans      &openCMD      &trans        &trans        &trans        &trans          &trans    &trans             &trans           &trans      &trans      &trans
 &trans      &trans        &trans        &trans        &trans        &trans          &trans    &trans             &trans           &trans      &trans      &trans
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PP  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &kp C_PREV  &kp C_NEXT  &trans
-                                        &openCMD      &trans        &trans          &trans    &trans             &trans
+                                        &trans        &trans        &trans          &trans    &trans             &trans
             >;
         };
     };
