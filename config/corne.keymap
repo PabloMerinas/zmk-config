@@ -46,6 +46,13 @@
 
             label = "OPENCMD";
         };
+
+        n_esp: n_esp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&sk LALT &kp NUMBER_1 &kp NUMBER_6 &kp NUMBER_4>;
+            label = "N_ESP";
+        };
     };
 
     keymap {
@@ -59,10 +66,10 @@
             //                    | GUI | LWR | ALT/ENT |   | SPACE | BKSP | RSE  |
 
             bindings = <
-&kp TAB    &ht LS(Q) Q  &ht LS(W) W  &ht LS(E) E  &ht LS(R) R  &ht LS(T) T     &ht LS(Y) Y  &ht LS(U) U  &ht LS(I) I  &ht LS(O) O  &ht LS(P) P  &kp ESC
-&kp LCTRL  &ht LS(A) A  &ht LS(S) S  &ht LS(D) D  &ht LS(F) F  &ht LS(G) G     &ht LS(H) H  &ht LS(J) J  &ht LS(K) K  &ht LS(L) L  &kp SEMI     &lt 1 SQT
-&kp LSHFT  &ht LS(Z) Z  &ht LS(X) X  &ht LS(C) C  &ht LS(V) V  &ht LS(B) B     &ht LS(N) N  &ht LS(M) M  &kp COMMA    &kp DOT      &kp FSLH     &kp LALT
-                                     &kp LGUI     &mo 1        &tp LALT RET    &kp SPACE    &kp BSPC     &mo 2
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T           &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
+&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G           &kp H      &kp J     &kp K      &kp L    &kp SEMI  &lt 1 SQT
+&kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp LALT
+                         &kp LGUI  &mo 1  &tp LALT RET    &kp SPACE  &kp BSPC  &mo 2
             >;
         };
 
@@ -74,10 +81,10 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&trans     &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
-&trans     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5          &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
-&kp LSHFT  &kp N6    &kp N7  &kp N8    &kp N9    &kp N0          &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp LALT
-                             &kp LGUI  &trans    &tp LALT RET    &kp SPACE  &kp BSPC   &trans
+&trans     &ht EXCL QUESTION  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
+&trans     &kp N1             &kp N2  &kp N3    &kp N4    &kp N5          &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
+&kp LSHFT  &kp N6             &kp N7  &kp N8    &kp N9    &kp N0          &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp LALT
+                                      &kp LGUI  &trans    &tp LALT RET    &kp SPACE  &kp BSPC   &trans
             >;
         };
 
@@ -89,9 +96,9 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans  &trans  &trans  &trans  &kp LA(F4)  &trans     &trans            &trans             &kp UP    &trans     &trans  &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4      &kp F5     &trans            &kp LEFT           &kp DOWN  &kp RIGHT  &trans  &trans
-&trans  &kp F6  &kp F7  &kp F8  &kp F9      &kp F10    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans    &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &kp LA(F4)  &trans     &kp PG_UP         &ht HOME LS(HOME)  &kp UP    &ht END LS(END)  &trans  &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4      &kp F5     &kp PG_DN         &kp LEFT           &kp DOWN  &kp RIGHT        &trans  &trans
+&trans  &kp F6  &kp F7  &kp F8  &kp F9      &kp F10    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans    &trans           &trans  &trans
                         &trans  &trans      &trans     &trans            &trans             &trans
             >;
         };
