@@ -39,10 +39,9 @@
             #binding-cells = <0>;
             bindings =
                 <&kp LG(R)>,
-                <&macro_wait_time 100>,
-                <&kp C &kp M &kp D>,
-                <&macro_wait_time 50>,
-                <&kp ENTER>;
+                <&macro_wait_time 150>,
+                <&kp C &kp M &kp D &kp ENTER>,
+                <&macro_wait_time 50>;
 
             label = "OPENCMD";
         };
