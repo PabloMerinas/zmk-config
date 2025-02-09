@@ -81,7 +81,7 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&trans     &ht EXCL QUESTION  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
+&trans     &ht QUESTION EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
 &trans     &kp N1             &kp N2  &kp N3    &kp N4    &kp N5          &kp MINUS  &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
 &kp LSHFT  &kp N6             &kp N7  &kp N8    &kp N9    &kp N0          &kp UNDER  &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp LALT
                                       &kp LGUI  &trans    &tp LALT RET    &kp SPACE  &kp BSPC   &trans
@@ -96,7 +96,7 @@
             //                    |     |     |    |                  |     |     |     |
 
             bindings = <
-&trans  &trans  &trans  &trans  &kp LA(F4)  &trans     &kp PG_UP         &ht HOME LS(HOME)  &kp UP    &ht END LS(END)  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LA(F4)  &trans     &kp PG_UP         &ht LS(HOME) HOME  &kp UP    &ht LS(END) END  &trans  &trans
 &trans  &kp F1  &kp F2  &kp F3  &kp F4      &kp F5     &kp PG_DN         &kp LEFT           &kp DOWN  &kp RIGHT        &trans  &trans
 &trans  &kp F6  &kp F7  &kp F8  &kp F9      &kp F10    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans    &trans           &trans  &trans
                         &trans  &trans      &trans     &trans            &trans             &trans
