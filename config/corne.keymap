@@ -116,7 +116,7 @@
             bindings = <
 &trans  &kp Q   &kp W   &kp E   &trans  &kp ENTER    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp A   &kp S   &kp D   &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5       &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &kp SPACE    &trans  &trans  &trans
             >;
         };
