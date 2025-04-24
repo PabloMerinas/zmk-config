@@ -1,11 +1,12 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+    - name: urob
+      url-base: https://github.com/urob
+
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
-      import: app/west.yml
+      remote: urob
+      revision: feat/oled-power-saving
+      path: zmk
   self:
     path: config
