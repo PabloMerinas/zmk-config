@@ -1,12 +1,12 @@
 manifest:
   remotes:
-    - name: urob
-      url-base: https://github.com/urob
+    - name: jediknil
+      url-base: https://github.com/jediknil
 
   projects:
     - name: zmk
-      remote: urob
-      revision: feat/oled-power-saving
+      remote: jediknil
+      revision: display-timeout
       path: zmk
   self:
     path: config
