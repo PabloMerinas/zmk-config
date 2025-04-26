@@ -30,7 +30,7 @@
             bindings = <&kp>, <&kp>;
         };
 
-        unicode_n_tilde: unicode {
+        unicode_enye: unicode {
             compatible = "zmk,behavior-unicode";
             label = "Unicode ñ";
             #binding-cells = <1>;
@@ -50,7 +50,7 @@
             //                    | GUI | LWR | ALT/ENT |   | SPACE | BKSP | RSE  |
 
             bindings = <
-&kp TAB           &unicode_n_tilde (00F1)  &kp W  &kp E     &kp R  &kp T           &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
+&kp TAB           &unicode_enye (00F1) (00F1)  &kp W  &kp E     &kp R  &kp T           &kp Y      &kp U     &kp I      &kp O    &kp P     &kp ESC
 &kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F  &kp G           &kp H      &kp J     &kp K      &kp L    &kp SEMI  &lt 1 SQT
 &kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V  &kp B           &kp N      &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
                                 &kp LGUI  &mo 1  &tp LALT RET    &kp SPACE  &kp BSPC  &mo 2
