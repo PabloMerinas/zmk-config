@@ -29,11 +29,6 @@
             flavor = "balanced";      // Equilibrio entre tap y hold
             bindings = <&kp>, <&kp>;
         };
-        uenye: unicode_input {
-            compatible = "zmk,behavior-unicode";
-            label = "U_ENYE";
-            unicode-map = <&unicode_map enye>;
-        };
 
     };
     unicode_map {
