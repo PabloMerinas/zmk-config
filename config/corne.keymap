@@ -39,7 +39,7 @@
                 code = <0x00F1>;
             };
         };
-    }
+    };
     combos { compatible = "zmk,combos"; };
 
     keymap {
